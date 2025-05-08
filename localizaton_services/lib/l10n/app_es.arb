@@ -1,0 +1,7 @@
+{
+    "signUpTitle": "Registrarse",
+    "emailLabel": "Correo electrónico",
+    "passwordLabel": "Contraseña",
+    "confirmPasswordLabel": "Confirmar contraseña",
+    "signUpButton": "Crear cuenta"
+}
