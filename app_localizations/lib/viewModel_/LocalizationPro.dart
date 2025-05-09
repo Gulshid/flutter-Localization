@@ -2,12 +2,20 @@ import 'package:flutter/material.dart';
 
 class Localizationpro with ChangeNotifier {
   //obsecured toggle password visibility
-  bool _isObsecured = true;
-  bool get isObsecured => _isObsecured;
+  bool _isPasswordObscured = true;
+  bool _isConfirmPasswordObscured = true;
+
+  bool get isPasswordObscured => _isPasswordObscured;
+  bool get isConfirmPasswordObscured => _isConfirmPasswordObscured;
 
   //make a function for obsecured visibility
-  void toggleObsecured() {
-    _isObsecured = !_isObsecured;
+  void togglePasswordVisibility() {
+    _isPasswordObscured = !_isPasswordObscured;
+    notifyListeners();
+  }
+
+  void toggleConfirmPasswordVisibility() {
+    _isConfirmPasswordObscured = !_isConfirmPasswordObscured;
     notifyListeners();
   }
 
