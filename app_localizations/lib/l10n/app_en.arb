@@ -1,0 +1,8 @@
+{  
+    "signUpTitle": "Sign Up",
+    "emailLabel": "Email",
+    "passwordLabel": "Password",
+    "confirmPasswordLabel": "Confirm Password",
+    "signUpButton": "Create Account"
+    
+}
