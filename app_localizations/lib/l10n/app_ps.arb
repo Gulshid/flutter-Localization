@@ -3,5 +3,12 @@
     "emailLabel": "بریښنالیک",
     "passwordLabel": "پاسورډ",
     "confirmPasswordLabel": "پاسورډ تایید کړئ",
-    "signUpButton": "اکونټ جوړ کړئ"
+    "signUpButton": "اکونټ جوړ کړئ",
+    "loginTitle": "ننوتل",
+    "emailLab": "بریښنالیک",
+    "passwordLab": "پاسورډ",
+    "loginButton": "ننوزئ",
+    "forgotPassword": "پاسورډ مو هېر شوی؟",
+    "noAccount": "حساب نه لرئ؟",
+    "signUpNow": "همدا اوس راجسټر شئ"
 }

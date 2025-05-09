@@ -3,5 +3,12 @@
     "emailLabel": "ای میل",
     "passwordLabel": "پاس ورڈ",
     "confirmPasswordLabel": "پاس ورڈ کی تصدیق کریں",
-    "signUpButton": "اکاؤنٹ بنائیں"
+    "signUpButton": "اکاؤنٹ بنائیں",
+    "loginTitle": "لاگ ان کریں",
+    "emailLab": "ای میل",
+    "passwordLab": "پاس ورڈ",
+    "loginButton": "سائن ان کریں",
+    "forgotPassword": "پاس ورڈ بھول گئے؟",
+    "noAccount": "اکاؤنٹ نہیں ہے؟",
+    "signUpNow": "ابھی سائن اپ کریں"
 }

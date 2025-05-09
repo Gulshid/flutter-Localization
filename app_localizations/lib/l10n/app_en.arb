@@ -3,6 +3,14 @@
     "emailLabel": "Email",
     "passwordLabel": "Password",
     "confirmPasswordLabel": "Confirm Password",
-    "signUpButton": "Create Account"
+    "signUpButton": "Create Account",
+    "loginTitle": "Login",
+    "emailLab": "Email",
+    "passwordLab": "Password",
+    "loginButton": "Sign In",
+    "forgotPassword": "Forgot Password?",
+    "noAccount": "Don't have an account?",
+    "signUpNow": "Sign Up Now"
     
 }
+

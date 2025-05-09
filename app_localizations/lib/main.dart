@@ -1,7 +1,6 @@
-// import 'package:app_localizations/Routes/Routes.dart';
-// import 'package:app_localizations/Routes/RoutesName.dart';
+import 'package:app_localizations/Routes/Routes.dart';
+import 'package:app_localizations/Routes/RoutesName.dart';
 import 'package:app_localizations/viewModel_/LocalizationPro.dart';
-import 'package:app_localizations/views_/SignUp_View.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
@@ -48,9 +47,9 @@ class MyApp extends StatelessWidget {
                 ),
               ),
         
-              // initialRoute: Routesname.signup,
-              // onGenerateRoute: Routes.generate_Route,
-              home:SignUpView()
+              initialRoute: Routesname.home,
+              onGenerateRoute: Routes.generate_Route,
+              // home:()
               
               );
           },

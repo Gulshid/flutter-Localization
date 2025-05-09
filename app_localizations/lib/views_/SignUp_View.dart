@@ -24,7 +24,7 @@ class _SignUpViewState extends State<SignUpView> {
         decoration: BoxDecoration(
           gradient: LinearGradient(colors: [Colors.blue, Colors.blueGrey],
           begin: Alignment.topRight,
-          end: Alignment.topLeft
+          end: Alignment.bottomRight
           ),
         
         ),
@@ -105,6 +105,8 @@ class _SignUpViewState extends State<SignUpView> {
               }),
             ),
 
+            SliverToBoxAdapter(child: SizedBox(height: 40.h,)),
+
 
             SliverToBoxAdapter(
               child: Padding(
@@ -116,21 +118,33 @@ class _SignUpViewState extends State<SignUpView> {
                   // 1st TextField for email
                   TextField(
                     style: TextStyle(color: Colors.black),
+
                     decoration: InputDecoration(
                       hintText: location.emailLabel,
                       hintStyle: TextStyle(color: Colors.black),
-                      suffixIcon: Icon(Icons.email, color: Colors.blue),
+                      suffixIcon: Icon(Icons.email, color: Colors.black),
+
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
+                        borderSide: BorderSide(color: Colors.blue, width: 3),
                       ),
                     
                       disabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
-                        borderSide: BorderSide(color: Colors.blue, width: 2),
+                        borderSide: BorderSide(color: Colors.blue, width: 3),
                       ),
+
+                      focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                      borderSide: BorderSide(color: Colors.black, width: 3), 
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                      borderSide: BorderSide(color: Colors.black, width: 3), 
+                    ),
                     ),
                   ),
-                       
+                    
                   SizedBox(height: 20.h,),
                   // 2nd TextField for password
                   TextField(
@@ -140,7 +154,7 @@ class _SignUpViewState extends State<SignUpView> {
                     decoration: InputDecoration(
                       hintText: location.passwordLabel,
                       hintStyle: TextStyle(color: Colors.black),
-                       
+                  
                       suffixIcon: GestureDetector(
                         onTap: () {
                           pro.togglePasswordVisibility();
@@ -148,20 +162,29 @@ class _SignUpViewState extends State<SignUpView> {
                         child: Icon(
                           pro.isPasswordObscured? Icons.visibility_off :
                           Icons.remove_red_eye_outlined,
-                          color: Colors.blue,
+                          color: Colors.black,
                         ),
                       ),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
-                       
+                      
                       disabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
                         borderSide: BorderSide(color: Colors.blue, width: 2),
                       ),
+
+                      focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                      borderSide: BorderSide(color: Colors.black, width: 3), 
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                      borderSide: BorderSide(color: Colors.black, width: 3), 
+                    ),
                     ),
                   ),
-                       
+                      
                   SizedBox(height: 20.h,),
                   //3rd TextField for Confirm Password
                   TextField(
@@ -171,7 +194,7 @@ class _SignUpViewState extends State<SignUpView> {
                     decoration: InputDecoration(
                       hintText: location.confirmPasswordLabel,
                       hintStyle: TextStyle(color: Colors.black),
-                       
+                      
                       suffixIcon: GestureDetector(
                         onTap: () {
                           pro.toggleConfirmPasswordVisibility();
@@ -179,17 +202,26 @@ class _SignUpViewState extends State<SignUpView> {
                         child: Icon(
                           pro.isConfirmPasswordObscured? Icons.visibility_off :
                           Icons.remove_red_eye_outlined,
-                          color: Colors.blue,
+                          color: Colors.black,
                         ),
                       ),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
-                       
+                      
                       disabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
                         borderSide: BorderSide(color: Colors.blue, width: 2),
                       ),
+
+                      focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                      borderSide: BorderSide(color: Colors.black, width: 3), 
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                      borderSide: BorderSide(color: Colors.black, width: 3), 
+                    ),
                     ),
                   ),
                       SizedBox(height: 30.h,),
@@ -200,11 +232,11 @@ class _SignUpViewState extends State<SignUpView> {
                     ),
                     onPressed: (){},
                     child: Text(location.signUpButton, style: GoogleFonts.poppins(color: Colors.white ),)),
-                       
-                ],
-                         ),
-                       ),
-             ),
+                      
+              ],
+                        ),
+                      ),
+            ),
           ],
         
         ),

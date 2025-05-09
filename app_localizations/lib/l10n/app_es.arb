@@ -3,5 +3,12 @@
     "emailLabel": "Correo electrónico",
     "passwordLabel": "Contraseña",
     "confirmPasswordLabel": "Confirmar contraseña",
-    "signUpButton": "Crear cuenta"
+    "signUpButton": "Crear cuenta",
+    "loginTitle": "Iniciar sesión",
+    "emailLab": "Correo electrónico",
+    "passwordLab": "Contraseña",
+    "loginButton": "Iniciar",
+    "forgotPassword": "¿Olvidaste tu contraseña?",
+    "noAccount": "¿No tienes una cuenta?",
+    "signUpNow": "Regístrate ahora"
 }
