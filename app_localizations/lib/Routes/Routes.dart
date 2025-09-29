@@ -3,7 +3,6 @@ import 'package:app_localizations/views_/Home_view.dart';
 import 'package:app_localizations/views_/Login_view.dart';
 import 'package:app_localizations/views_/SignUp_View.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class Routes {
   static Route<dynamic> generate_Route(RouteSettings local) {
